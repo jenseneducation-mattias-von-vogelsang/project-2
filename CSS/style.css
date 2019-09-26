@@ -1,4 +1,133 @@
 @import url("https://fonts.googleapis.com/css?family=Muli|Poppins&display=swap");
 
-/* font-family: 'Muli', sans-serif;
-font-family: 'Poppins', sans-serif; */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(/images/19366.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f0f0f0;
+}
+
+.bg-white {
+  background: white;
+}
+
+.shadow {
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16);
+}
+
+.l-green {
+  color: #00aeb4;
+}
+
+.d-grey {
+  color: #4d4b4b;
+}
+
+.active {
+  color: #92c1c3;
+  background: #dddbdb;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.font-muli {
+  font-family: "Muli", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "nav nav nav nav nav nav"
+    "hero hero hero hero hero hero"
+    ". main main main main ."
+    ". article article article article ."
+    ". . aside aside . ."
+    ". . footer footer . .";
+}
+
+.menu {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: sticky;
+  align-content: center;
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  height: 100%;
+  width: 33%;
+  padding: 1.5em;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+a > i {
+  transform: scale(2.5, 2.5);
+}
+
+.hero-container {
+  grid-area: hero;
+  padding-top: 6em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero1 {
+  display: none;
+}
+
+.hero1,
+.hero2 {
+  width: 100%;
+  height: 50%;
+}
+
+main {
+  grid-area: main;
+}
+
+article {
+  grid-area: article;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+
+main > p,
+main > h1 {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero1,
+  .hero2 {
+    width: 50%;
+    height: 20%;
+    display: block;
+  }
+}
