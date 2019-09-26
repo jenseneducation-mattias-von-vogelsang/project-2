@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(/images/19366.jpg);
+  background-image: url(/images/greenbg.jpg);
   background-attachment: fixed;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -15,20 +15,29 @@ body {
   background: white;
 }
 
+hr {
+  color: white;
+  border: 1px solid white;
+}
+
 .shadow {
   box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16);
 }
 
 .l-green {
-  color: #00aeb4;
+  color: #74c8f5;
+}
+
+.red {
+  color: #e27e79;
 }
 
 .d-grey {
-  color: #4d4b4b;
+  color: #707070;
 }
 
 .active {
-  color: #92c1c3;
+  color: #8ca3b1;
   background: #dddbdb;
 }
 
@@ -69,6 +78,7 @@ body {
   position: fixed;
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 
 a {
@@ -106,10 +116,6 @@ main {
   grid-area: main;
 }
 
-article {
-  grid-area: article;
-}
-
 aside {
   grid-area: aside;
 }
@@ -123,11 +129,44 @@ main > h1 {
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
+article {
+  grid-area: article;
+}
+
+section {
+  display: flex;
+}
+
+.icon-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 80%;
+  width: 80%;
+  padding: 2em;
+  margin-top: 3.2em;
+  margin-right: 1em;
+}
+
+.icon-container > i {
+  transform: scale(2.4, 2.8);
+}
+
+@media (min-width: 768px) {
   .hero1,
   .hero2 {
     width: 50%;
-    height: 20%;
+    height: 20em;
     display: block;
+  }
+
+  .icon-container {
+    width: 20%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .icon-container > i {
+    transform: scale(2.8, 3.2);
   }
 }
