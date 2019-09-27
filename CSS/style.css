@@ -3,29 +3,41 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(/images/greenbg.jpg);
+  background-image: url(/images/simplebg.jpg);
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #f0f0f0;
+  background-color: whitesmoke;
 }
-
+#top {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
 .bg-white {
   background: white;
 }
 
-hr {
+.white {
   color: white;
-  border: 1px solid white;
 }
 
-.shadow {
+hr {
+  color: white;
+  border: 0.5px solid white;
+}
+
+.red {
+  color: #e27e79;
+}
+
+.bottom-shadow {
   box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16);
 }
 
 .l-green {
-  color: #74c8f5;
+  color: #6bbbbe;
 }
 
 .red {
@@ -37,7 +49,7 @@ hr {
 }
 
 .active {
-  color: #8ca3b1;
+  color: #3277a2;
   background: #dddbdb;
 }
 
@@ -110,18 +122,12 @@ a > i {
 .hero2 {
   width: 100%;
   height: 50%;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 main {
   grid-area: main;
-}
-
-aside {
-  grid-area: aside;
-}
-
-footer {
-  grid-area: footer;
 }
 
 main > p,
@@ -135,6 +141,7 @@ article {
 
 section {
   display: flex;
+  align-items: center;
 }
 
 .icon-container {
@@ -144,12 +151,67 @@ section {
   height: 80%;
   width: 80%;
   padding: 2em;
-  margin-top: 3.2em;
   margin-right: 1em;
 }
 
 .icon-container > i {
-  transform: scale(2.4, 2.8);
+  transform: scale(3.6, 3.2);
+}
+
+aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+aside > p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+.icon4 {
+  padding: 2em;
+  width: 20%;
+  height: 30%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 1em;
+}
+
+.icon4 > i {
+  transform: scale(3.4, 3);
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > h5 {
+  display: none;
+}
+
+.link-icons {
+  display: none;
+}
+
+.tmu {
+  border-radius: 40%;
+  margin-top: 2em;
+  margin-bottom: -2em;
+  padding: 2em;
+  width: 25%;
+  overflow: hidden;
+}
+
+.tmu > i {
+  margin-top: -1.2em;
 }
 
 @media (min-width: 768px) {
