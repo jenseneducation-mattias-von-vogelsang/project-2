@@ -337,7 +337,7 @@ footer > h5 {
     position: absolute;
     width: 1500%;
     display: none;
-    margin-left: -240%;
+    margin-left: -270%;
     margin-top: 100%;
     z-index: 1;
   }
