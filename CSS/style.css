@@ -99,6 +99,10 @@ a > h4 {
   align-items: center;
 }
 
+.nav-icons a:hover {
+  background-color: #d3d3d3;
+}
+
 .dropdown > a {
   display: none;
 }
@@ -286,7 +290,7 @@ footer > h5 {
     height: 100%;
     width: 12%;
     overflow: hidden;
-    margin-left: 6%;
+    margin-left: 10%;
     top: 0;
     order: 0;
   }
@@ -309,7 +313,7 @@ footer > h5 {
     position: relative;
     width: 2.4em;
     height: 2.4em;
-    margin-left: 71%;
+    margin-left: 63%;
   }
 
   .nav-icons > a {
@@ -333,13 +337,9 @@ footer > h5 {
     position: absolute;
     width: 1500%;
     display: none;
-    margin-left: -450%;
+    margin-left: -240%;
     margin-top: 100%;
     z-index: 1;
-  }
-
-  .nav-icons a:hover {
-    background-color: #d3d3d3;
   }
 
   .dropdown:hover .nav-icons {
