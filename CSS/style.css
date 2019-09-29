@@ -73,6 +73,10 @@ hr {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 1fr auto;
+  min-height: 100vw;
+}
+
+.index {
   grid-template-areas:
     "nav nav nav nav nav nav nav nav"
     "hero hero hero hero hero hero hero hero"
@@ -86,7 +90,7 @@ hr {
   display: none;
 }
 
-a > h4 {
+.nav-icons > a > h4 {
   display: none;
 }
 
@@ -155,22 +159,22 @@ a > i {
   border-bottom: 2px solid white;
 }
 
-main {
+.main-index {
   grid-area: main;
   margin-top: 5%;
 }
 
-main > p,
-main > h1 {
+.main-index > p,
+.main-index > h1 {
   text-align: center;
   margin-bottom: 10%;
 }
 
-article {
+.article-index {
   grid-area: article;
 }
 
-section {
+.sec-index {
   display: flex;
   align-items: center;
 }
@@ -189,14 +193,14 @@ section {
   transform: scale(3.6, 3);
 }
 
-aside {
+.aside-index {
   grid-area: aside;
   display: flex;
   flex-direction: column;
   justify-items: center;
 }
 
-aside > p {
+.aside-index > p {
   text-align: center;
   font-weight: 400;
   font-size: 0.8em;
@@ -269,7 +273,7 @@ footer > h5 {
 }
 
 @media (min-width: 1024px) {
-  .grid {
+  .index {
     grid-template-areas:
       "nav nav nav nav nav nav nav nav"
       "hero hero hero hero hero hero hero hero"
@@ -363,28 +367,33 @@ footer > h5 {
     display: inline-block;
   }
 
-  main > h1 {
+  .main-index > h1 {
     margin-bottom: 4%;
     font-size: 2.8vw;
   }
-  main > p {
+  .main-index > p {
     font-size: 1.8vw;
     text-align: center;
     margin-bottom: 10%;
   }
 
-  aside {
+  .aside-index {
     border-left: 1px solid white;
     z-index: 1;
     margin-left: -20%;
+    margin-top: 2em;
   }
 
   .icon4,
-  aside > p {
+  .aside-index > p {
     margin-left: 40%;
   }
 
-  article > hr {
+  .article-index {
+    margin-top: 3em;
+  }
+
+  .article-index > hr {
     display: none;
   }
 
