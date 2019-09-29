@@ -10,7 +10,8 @@ body {
   background-size: cover;
   background-color: whitesmoke;
 }
-a[name="top"] {
+a[name="top"],
+a[name="top2"] {
   margin: 0;
   padding: 0;
 }
@@ -52,7 +53,6 @@ hr {
 }
 
 .active {
-  color: #3277a2;
   background: #dddbdb;
 }
 
@@ -78,7 +78,6 @@ hr {
 
 .index {
   grid-template-areas:
-    "nav nav nav nav nav nav nav nav"
     "hero hero hero hero hero hero hero hero"
     ". main main main main main main ."
     ". article article article article article article ."
@@ -120,10 +119,13 @@ hr {
   align-items: center;
 }
 .menu {
-  grid-area: nav;
   width: 100%;
   position: fixed;
   z-index: 1;
+}
+
+a:visited {
+  color: #707070;
 }
 
 a {
@@ -174,7 +176,7 @@ a > i {
   grid-area: article;
 }
 
-.sec-index {
+.section {
   display: flex;
   align-items: center;
 }
@@ -249,6 +251,23 @@ footer > h5 {
   margin-top: -1.2em;
 }
 
+.aboutme {
+  grid-template-areas:
+    "hero hero hero hero hero hero hero hero"
+    ". main main main main main main ."
+    "footer footer footer footer footer footer footer footer";
+}
+
+.main-aboutme {
+  grid-area: main;
+}
+
+.main-aboutme > h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 1em;
+}
+
 @media (min-width: 768px) {
   .hero1,
   .hero2 {
@@ -275,7 +294,6 @@ footer > h5 {
 @media (min-width: 1024px) {
   .index {
     grid-template-areas:
-      "nav nav nav nav nav nav nav nav"
       "hero hero hero hero hero hero hero hero"
       ". main main main main main main ."
       ". . article article article . . ."
@@ -440,5 +458,12 @@ footer > h5 {
   .tmu > i {
     margin: 0;
     align-self: center;
+  }
+
+  .abtme {
+    height: 30em;
+  }
+  .main-aboutme {
+    margin-bottom: 5em;
   }
 }
