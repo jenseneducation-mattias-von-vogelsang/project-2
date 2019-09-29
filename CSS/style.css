@@ -473,4 +473,8 @@ footer > h5 {
   .main-aboutme > section > div {
     width: 3.5em;
   }
+
+  .main-aboutme > section > h5 {
+    font-size: 1.6vw;
+  }
 }
