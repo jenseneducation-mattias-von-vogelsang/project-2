@@ -394,6 +394,9 @@ footer > h5 {
     text-align: center;
     margin-bottom: 10%;
   }
+  .icon-container > i {
+    transform: scale(4, 4);
+  }
 
   .aside-index {
     border-left: 1px solid white;
@@ -469,8 +472,5 @@ footer > h5 {
 
   .main-aboutme > section > div {
     width: 3.5em;
-  }
-  .main-aboutme > section > div > i {
-    transform: scale(4.2, 4.2);
   }
 }
