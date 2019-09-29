@@ -466,4 +466,11 @@ footer > h5 {
   .main-aboutme {
     margin-bottom: 5em;
   }
+
+  .main-aboutme > section > div {
+    width: 3.5em;
+  }
+  .main-aboutme > section > div > i {
+    transform: scale(4.2, 4.2);
+  }
 }
