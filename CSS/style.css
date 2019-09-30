@@ -5,16 +5,14 @@ body {
   padding: 0;
   background-image: url(/images/simplebg.jpg);
   background-attachment: fixed;
-  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: whitesmoke;
+  background-color: rgb(1, 59, 114);
 }
 a[name="top"],
 a[name="top2"] {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 html {
