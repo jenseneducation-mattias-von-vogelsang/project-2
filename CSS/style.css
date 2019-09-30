@@ -9,8 +9,7 @@ body {
   background-size: cover;
   background-color: rgb(1, 59, 114);
 }
-a[name="top"],
-a[name="top2"] {
+a[name="top"] {
   margin: 0;
   padding: 0;
 }
@@ -272,6 +271,101 @@ footer > h5 {
   margin-bottom: 1em;
 }
 
+.contact {
+  grid-template-areas:
+    ". main main main main main main ."
+    ". main main main main main main ."
+    "map map map map map map map map"
+    "footer footer footer footer footer footer footer footer";
+}
+
+.main-contact {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 80%;
+  margin-top: 5em;
+}
+
+.main-contact > h2 {
+  display: inline-block;
+  text-align: center;
+}
+
+.form-container {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+button {
+  margin-top: 1em;
+  border-radius: 4px;
+  padding: 1.5em;
+  text-align: center;
+  background-color: #a4c1d3;
+}
+
+.mail {
+  border: 1px solid white;
+  border-radius: 4px;
+  height: 2em;
+  font-size: 4.5vw;
+  font-weight: 700;
+  width: 85%;
+  padding: 2px;
+}
+
+.ic-contact {
+  width: 0.5em;
+  height: 0.2em;
+  align-self: center;
+  margin: 0;
+}
+
+.ic-contact > i {
+  align-self: center;
+}
+
+textarea {
+  resize: none;
+  height: 6em;
+  font-size: 4.5vw;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.mail:focus {
+  outline: none;
+}
+
+.map {
+  grid-area: map;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.mapouter {
+  width: 100%;
+  margin-top: 1.5em;
+}
+
+iframe {
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0;
+  height: 15em;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
 @media (min-width: 768px) {
   .hero1,
   .hero2 {
@@ -468,10 +562,12 @@ footer > h5 {
   }
 
   .abtme {
-    height: 30em;
+    height: 32em;
   }
+
   .main-aboutme {
     margin-bottom: 5em;
+    margin-top: 2em;
   }
 
   .main-aboutme > section > div {

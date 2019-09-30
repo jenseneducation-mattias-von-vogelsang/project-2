@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Frontend Freelancer Contact</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script
+      src="https://kit.fontawesome.com/f7329bb933.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <a name="top"></a>
+    <div class="grid contact">
+      <nav class="menu bg-white bottom-shadow">
+        <div class="logo-container bg-white">
+          <img alt="Logo MLvV" src="images/logo.jpg" />
+        </div>
+        <div class="dropdown">
+          <a title="menu"
+            ><h4 class="d-grey font-poppins">Menu</h4>
+            <i class="fas fa-bars d-grey"></i
+          ></a>
+          <div class="nav-icons">
+            <a class="bg-white" title="Home" href="index.html">
+              <h4 class="d-grey font-poppins">Home</h4>
+              <i class="fas fa-home"></i
+            ></a>
+            <a class="active" title="About me" href="aboutme.html">
+              <h4 class="d-grey font-poppins">About me</h4>
+              <i class="fas fa-address-card d-grey"></i
+            ></a>
+            <a class="bg-white" title="Contact" href="contact.html">
+              <h4 class="d-grey font-poppins">Contact</h4>
+              <i class="far fa-edit d-grey"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+      <main class="main-contact font-muli white">
+            <h2>Don't be afraid to contact me!</h2>
+            <div class="icon-container ic-contact bg-white round bottom-shadow">
+                    <i class="fas fa-at l-green"></i>
+            </div>
+            <div class="form-container">
+            <form id="emailform">
+              <h4>Your email</h4>
+              <input class="mail bottom-shadow font-poppins" type="text" maxlength="40" /><br />
+              <h4>What's on your mind?</h4>
+              <textarea class="font-poppins bottom-shadow" name="messageBox" id="emailform" cols="30" rows="5">Hey, amazing frontend guy... </textarea
+              >
+              <button class="white">SEND MESSAGE</button>
+            </div>
+      </main>
+      <section class="map">          
+          <div class="icon-container ic-contact bg-white round bottom-shadow">
+                <i class="fas fa-map-marked-alt l-green"></i>
+          </div>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="100%" max-height="auto" id="gmap_canvas" src="https://maps.google.com/maps?q=Skeppsm%C3%A4klargatan%2037&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                frameborder="0">
+            </iframe>
+        </div>
+    </div>
+      </section>
+      <footer>
+        <h5 class="d-grey font-poppins">Mattias Lind von Vogelsang</h5>
+        <a class="tmu bg-white bottom-shadow" href="#top"
+          ><i class="fas fa-chevron-up d-grey"></i
+        ></a>
+        <div class="link-icons">
+          <a
+            target="_blank"
+            href="https://github.com/jenseneducation-mattias-von-vogelsang"
+            ><i class="fab fa-github l-blue"></i
+          ></a>
+          <a><i class="fab fa-facebook l-blue"></i></a>
+          <a><i class="fab fa-linkedin l-blue"></i></a>
+          <a><i class="fab fa-twitter l-blue"></i></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
