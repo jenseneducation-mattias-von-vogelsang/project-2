@@ -85,7 +85,7 @@ hr {
     ". main main main main main main ."
     ". article article article article article article ."
     ". . aside aside aside aside . ."
-    ". . . footer footer . . .";
+    "footer footer footer footer footer footer footer footer";
 }
 
 .logo-container {
@@ -127,6 +127,7 @@ a {
   padding: 1.5em;
   display: flex;
   justify-content: center;
+  align-content: center;
   text-decoration: none;
 }
 
@@ -231,12 +232,12 @@ footer > h5 {
   margin-top: 2em;
   margin-bottom: -2em;
   padding: 2em;
-  width: 25%;
+  width: 10%;
   overflow: hidden;
 }
 
 .tmu > i {
-  margin-top: -1.2em;
+  margin-top: -1.25em;
 }
 
 .aboutme {
@@ -417,6 +418,8 @@ iframe {
 
   .dropdown {
     position: relative;
+    display: flex;
+    align-items: center;
     width: 2.4em;
     height: 2.4em;
     margin-left: 50%;
@@ -444,7 +447,7 @@ iframe {
     width: 1500%;
     display: none;
     margin-left: -270%;
-    margin-top: 112%;
+    margin-top: 375%;
     z-index: 1;
   }
 
@@ -462,7 +465,7 @@ iframe {
   .menu > h4 {
     display: inline-block;
     align-self: center;
-    margin-left: -8%;
+    margin-left: -7%;
   }
 
   .dropdown > a > h4 {
@@ -480,11 +483,13 @@ iframe {
     margin-bottom: 4%;
     font-size: 2.8vw;
   }
+
   .main-index > p {
     font-size: 1.8vw;
     text-align: center;
     margin-bottom: 10%;
   }
+
   .icon-container > i {
     transform: scale(4, 4);
   }
@@ -526,8 +531,7 @@ iframe {
     height: 2.5em;
     background-color: white;
     display: flex;
-    flex-direction: row;
-    align-content: center;
+    align-items: center;
     justify-content: space-evenly;
     margin-top: 4em;
     overflow: hidden;
