@@ -437,7 +437,7 @@ iframe {
     position: absolute;
     flex-direction: column;
     margin-top: 100%;
-    margin-left: -40%;
+    margin-left: -50%;
     width: 400%;
     display: none;
   }
