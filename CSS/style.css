@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Muli|Poppins&display=swap");
 
-/***** General classes, colors & settings for all three html pages. *****/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/***** General classes, colors & settings for all three html pages *****/
 body {
   margin: 0;
   background-image: url(/images/simplebg.jpg);
@@ -80,16 +86,6 @@ hr {
   min-height: 100vw;
 }
 
-/***** Specific settings for index.html (some are reused by the other html files) *****/
-.index {
-  grid-template-areas:
-    "hero hero hero hero hero hero hero hero"
-    ". main main main main main main ."
-    ". article article article article article article ."
-    ". . aside aside aside aside . ."
-    "footer footer footer footer footer footer footer footer";
-}
-
 /***** Navigation bar settings (Used by all html's) *****/
 .logo-container {
   display: none;
@@ -126,7 +122,7 @@ a:visited {
 }
 
 a {
-  width: 33%;
+  width: 33.33%;
   padding: 1.5em;
   display: flex;
   justify-content: center;
@@ -138,7 +134,7 @@ a > i {
   transform: scale(2.5, 2.5);
 }
 
-/* Hero settings */
+/***** Hero settings (Used by index & aboutme) *****/
 .hero-container {
   grid-area: hero;
   padding-top: 6em;
@@ -155,6 +151,44 @@ a > i {
   height: 50%;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
+}
+
+/***** Footer settings *****/
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+}
+
+footer > h5 {
+  display: none;
+}
+
+.link-icons {
+  display: none;
+}
+
+.tmu {
+  border-radius: 40%;
+  margin-top: 2em;
+  margin-bottom: -2em;
+  padding: 2em;
+  width: 15%;
+  overflow: hidden;
+}
+
+.tmu > i {
+  margin-top: -1.25em;
+}
+
+/***** Settings for index.html (Some are reused by the other html files) *****/
+.index {
+  grid-template-areas:
+    "hero hero hero hero hero hero hero hero"
+    ". main main main main main main ."
+    ". article article article article article article ."
+    ". . aside aside aside aside . ."
+    "footer footer footer footer footer footer footer footer";
 }
 
 /***** Index main settings *****/
@@ -177,11 +211,12 @@ a > i {
 .section {
   display: flex;
   align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .icon-container {
   display: flex;
-  align-content: center;
   justify-content: center;
   height: 1em;
   width: 2em;
@@ -190,7 +225,8 @@ a > i {
 }
 
 .icon-container > i {
-  transform: scale(3.6, 3);
+  transform: scale(3, 3);
+  align-self: center;
 }
 
 /* Index aside settings */
@@ -198,6 +234,7 @@ a > i {
   grid-area: aside;
   display: flex;
   flex-direction: column;
+  margin-top: 2em;
 }
 
 .aside-index > p {
@@ -206,46 +243,9 @@ a > i {
   font-size: 0.8em;
 }
 
-.icon4 {
-  padding: 2em;
-  width: 15%;
-  height: 20%;
+.aside-index > div {
   align-self: center;
-  display: flex;
-  justify-content: center;
-  margin-top: 1em;
-}
-
-.icon4 > i {
-  transform: scale(3.4, 3);
-}
-
-/* Footer settings */
-footer {
-  grid-area: footer;
-  display: flex;
-  justify-content: center;
-}
-
-footer > h5 {
-  display: none;
-}
-
-.link-icons {
-  display: none;
-}
-
-.tmu {
-  border-radius: 40%;
-  margin-top: 2em;
-  margin-bottom: -2em;
-  padding: 2em;
-  width: 10%;
-  overflow: hidden;
-}
-
-.tmu > i {
-  margin-top: -1.25em;
+  margin: 0;
 }
 
 /***** Settings for aboutme.html *****/
@@ -281,8 +281,6 @@ footer > h5 {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: center;
   margin-top: 4em;
 }
 
@@ -376,10 +374,6 @@ iframe {
     margin-bottom: 2em;
   }
 
-  .icon4 {
-    width: 10%;
-  }
-
   .icon-container > i {
     transform: scale(2.8, 3.2);
   }
@@ -396,42 +390,41 @@ iframe {
   .logo-container {
     display: inline-block;
     height: 100%;
-    width: 12%;
     overflow: hidden;
     margin-left: 10%;
-    top: 0;
-    order: 0;
   }
 
   .dropdown > a {
     position: absolute;
     display: flex;
+    align-self: center;
     width: 2em;
     padding: 1em;
   }
 
   .dropdown > a > i {
     align-self: center;
+    padding-left: 1em;
   }
 
   .dropdown {
     position: relative;
     display: flex;
     align-items: center;
-    width: 2.4em;
-    height: 2.4em;
-    margin-left: 50%;
+    width: 10em;
+    height: 3em;
+    margin-left: 45%;
   }
 
   .nav-icons > a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 2em;
+    padding: 0.5em;
   }
 
   .nav-icons > a > i {
-    margin-top: 16%;
+    margin-top: 15%;
   }
 
   .nav-icons > a > i,
@@ -443,10 +436,10 @@ iframe {
   .nav-icons {
     position: absolute;
     flex-direction: column;
-    width: 1500%;
+    margin-top: 100%;
+    margin-left: -40%;
+    width: 400%;
     display: none;
-    margin-left: -220%;
-    margin-top: 375%;
   }
 
   .dropdown:hover .nav-icons {
@@ -455,7 +448,6 @@ iframe {
 
   .menu {
     height: 3em;
-    margin: 0;
     display: flex;
     align-items: center;
   }
@@ -463,14 +455,7 @@ iframe {
   .menu > h4 {
     display: inline-block;
     align-self: center;
-    margin-left: -7%;
-  }
-
-  .dropdown > a > h4 {
-    display: inline-block;
-    margin: 0;
-    margin-right: 80%;
-    align-self: center;
+    white-space: nowrap;
   }
 
   .nav-icons > a > h4 {
@@ -482,7 +467,6 @@ iframe {
     width: 100%;
     height: 2.5em;
     background-color: white;
-    display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 4em;
@@ -532,18 +516,27 @@ iframe {
     margin-bottom: 10%;
   }
 
+  .icon-container {
+    width: 7em;
+    height: 6em;
+  }
+
   .icon-container > i {
     transform: scale(4, 4);
   }
 
   .aside-index {
     border-left: 1px solid rgba(255, 255, 255, 0.575);
-    z-index: 1;
     margin-left: -20%;
     margin-top: 2em;
   }
 
-  .icon4,
+  aside > .icon-container {
+    width: 6em;
+    height: 5em;
+    margin-left: 40%;
+  }
+
   .aside-index > p {
     margin-left: 40%;
   }
@@ -578,11 +571,15 @@ iframe {
     margin-top: 2em;
   }
 
-  .main-aboutme > section > div {
-    width: 3.5em;
-  }
-
   .main-aboutme > section > h5 {
     font-size: 1.6vw;
+  }
+
+  /***** Third @media for large desktop resizing *****/
+  @media (min-width: 1440px) {
+    /***** Dropdown menu @1440 settings *****/
+    .dropdown {
+      margin-left: 55%;
+    }
   }
 }
