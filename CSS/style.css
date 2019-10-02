@@ -442,11 +442,11 @@ iframe {
 
   .nav-icons {
     position: absolute;
+    flex-direction: column;
     width: 1500%;
     display: none;
     margin-left: -220%;
     margin-top: 375%;
-    z-index: 1;
   }
 
   .dropdown:hover .nav-icons {
