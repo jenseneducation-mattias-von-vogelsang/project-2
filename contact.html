@@ -41,30 +41,58 @@
         </div>
       </nav>
       <main class="main-contact font-muli white">
-             <div class="icon-container ic-contact bg-white round bottom-shadow">
-                    <i class="fas fa-at l-green"></i>
-            </div>           
-            <h2>Don't be afraid to contact me!</h2>
-            <form id="emailform">
-             <h4>Your name</h4>
-             <input class="name bottom-shadow font-poppins" type="text" maxlength="40" /><br />
-              <h4>Your email</h4>
-              <input class="mail bottom-shadow font-poppins" type="text" maxlength="40" /><br />
-              <h4>What's on your mind?</h4>
-              <textarea class="font-poppins bottom-shadow" name="messageBox" id="emailform" cols="30" rows="5">Hey, amazing frontend guy... </textarea
-              >
-              <button class="white">SEND MESSAGE</button>
-      </main>
-      <section class="map">          
-          <div class="icon-container ic-contact bg-white round bottom-shadow">
-                <i class="fas fa-map-marked-alt l-green"></i>
-          </div>
-            <div class="mapouter">
-                <div class="gmap_canvas"><iframe width="100%" max-height="auto" id="gmap_canvas" src="https://maps.google.com/maps?q=Skeppsm%C3%A4klargatan%2037&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-                frameborder="0">
-            </iframe>
+        <div class="icon-container ic-contact bg-white round bottom-shadow">
+          <i class="fas fa-at l-green"></i>
         </div>
-    </div>
+        <h2>Don't be afraid to contact me!</h2>
+        <form id="sendmail">
+          <label for="firstname"><h4>Your name</h4></label>
+          <input
+            name="fullname"
+            id="fullname"
+            class="bottom-shadow font-poppins"
+            type="text"
+            maxlength="40"
+            placeholder="John Johnson"
+          /><br />
+          <label for="email"><h4>Your email</h4></label>
+          <input
+            name="email"
+            id="email"
+            class="bottom-shadow font-poppins"
+            type="email"
+            maxlength="40"
+            placeholder="J.Johnson@hotmail.com"
+          /><br />
+          <label for="message"><h4>What's on your mind?</h4></label>
+          <textarea
+            name="message"
+            id="message"
+            class="font-poppins bottom-shadow"
+            name="messageBox"
+            id="emailform"
+            cols="30"
+            rows="5"
+          ></textarea>
+          <button type="submit" class="white">SEND MESSAGE</button>
+        </form>
+      </main>
+      <section class="map">
+        <div class="icon-container ic-contact bg-white round bottom-shadow">
+          <i class="fas fa-map-marked-alt l-green"></i>
+        </div>
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              width="100%"
+              max-height="auto"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=Skeppsm%C3%A4klargatan%2037&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+            >
+            </iframe>
+          </div>
+        </div>
       </section>
       <footer>
         <h5 class="d-grey font-poppins">Mattias Lind von Vogelsang</h5>

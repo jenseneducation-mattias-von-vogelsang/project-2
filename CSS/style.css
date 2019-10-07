@@ -301,8 +301,8 @@ button:hover {
   background: #8ca5b4;
 }
 
-.mail,
-.name {
+#email,
+#fullname {
   border: 1px solid white;
   border-radius: 4px;
   height: 2em;
@@ -324,16 +324,18 @@ button:hover {
   align-self: center;
 }
 
-textarea {
+#message {
   resize: none;
   height: 6em;
   font-size: 4.5vw;
   border: 1px solid white;
   border-radius: 4px;
   font-weight: 700;
+  padding: 2px;
+  padding-left: none;
 }
 
-.mail:focus {
+#email:focus {
   outline: none;
 }
 
