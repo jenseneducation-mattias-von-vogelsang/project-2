@@ -109,7 +109,7 @@ a > i {
 /***** Hero settings (Used by index & aboutme) *****/
 .hero-container {
   grid-area: hero;
-  padding-top: 6em;
+  padding-top: 8em;
   display: flex;
 }
 .hero1 {
@@ -412,7 +412,7 @@ iframe {
     display: block;
   }
   .menu {
-    height: 4em;
+    height: 5em;
     display: flex;
     align-items: center;
   }
