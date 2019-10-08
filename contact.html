@@ -14,12 +14,12 @@
   <body>
     <a name="top"></a>
     <div class="grid contact">
-      <nav class="menu bg-white bottom-shadow">
+      <header class="menu bg-white bottom-shadow">
         <div class="logo-container bg-white">
           <img alt="Logo MLvV" src="images/logo.jpg" />
         </div>
-        <h4 class="d-grey font-poppins">LvV Front end-development</h4>
-        <div class="dropdown">
+        <h4 class="d-grey font-poppins">LvV Front-end development</h4>
+        <nav class="dropdown">
           <a title="Menu"
             ><h4 class="d-grey font-poppins">Menu</h4>
             <i class="fas fa-bars d-grey"></i
@@ -38,19 +38,19 @@
               <i class="far fa-edit d-grey"></i
             ></a>
           </div>
-        </div>
-      </nav>
-      <main class="main-contact font-muli white">
+        </nav>
+      </header>
+      <main class="main-contact font-poppins white">
         <div class="icon-container ic-contact bg-white round bottom-shadow">
           <i class="fas fa-at l-green"></i>
         </div>
         <h2>Don't be afraid to contact me!</h2>
-        <form id="sendmail">
-          <label for="firstname"><h4>Your name</h4></label>
+        <form id="sendemail">
+          <label for="fullname"><h4>Your name</h4></label>
           <input
             name="fullname"
             id="fullname"
-            class="bottom-shadow font-poppins"
+            class="bottom-shadow font-muli"
             type="text"
             maxlength="40"
             placeholder="John Johnson"
@@ -59,7 +59,7 @@
           <input
             name="email"
             id="email"
-            class="bottom-shadow font-poppins"
+            class="bottom-shadow font-muli"
             type="email"
             maxlength="40"
             placeholder="J.Johnson@hotmail.com"
@@ -68,15 +68,15 @@
           <textarea
             name="message"
             id="message"
-            class="font-poppins bottom-shadow"
-            name="messageBox"
-            id="emailform"
-            cols="30"
-            rows="5"
+            class="bottom-shadow font-muli"
           ></textarea>
-          <button type="submit" class="white">SEND MESSAGE</button>
+          <button type="submit" value="submit" class="white font-poppins">
+            SEND E-MAIL
+          </button>
         </form>
+        <hr />
       </main>
+
       <section class="map">
         <div class="icon-container ic-contact bg-white round bottom-shadow">
           <i class="fas fa-map-marked-alt l-green"></i>

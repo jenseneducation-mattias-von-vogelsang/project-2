@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Muli|Poppins&display=swap");
-
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
-
 /***** General classes, colors & settings for all three html pages *****/
 body {
   margin: 0;
@@ -15,112 +13,88 @@ body {
   background-size: cover;
   background-color: rgb(1, 59, 114);
 }
-
 a[name="top"] {
   margin: 0;
   padding: 0;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 .bg-white {
   background: white;
 }
-
 .l-blue {
   color: #a4c1d3;
 }
-
 .white {
   color: white;
 }
-
 hr {
   color: white;
   border: 0.5px solid rgba(255, 255, 255, 0.7);
 }
-
 .red {
   color: #e27e79;
 }
-
 .bottom-shadow {
   box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16);
 }
-
 .l-green {
   color: #6bbbbe;
 }
-
 .red {
   color: #e27e79;
 }
-
 .d-grey {
   color: #707070;
 }
-
 .active {
   background: #dddbdb;
 }
-
 .round {
   border-radius: 50%;
 }
-
 .font-muli {
   font-family: "Muli", sans-serif;
+  font-weight: 100;
 }
-
 .font-poppins {
   font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
-
 .grid {
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 1fr auto;
-  min-height: 100vw;
+  min-height: 100vh;
 }
-
 /***** Navigation bar settings (Used by all html's) *****/
 .logo-container {
   display: none;
 }
-
 .nav-icons > a > h4 {
   display: none;
 }
-
 .nav-icons {
   display: flex;
 }
-
 .nav-icons a:hover {
   background-color: #d3d3d3;
 }
-
 .dropdown > a {
   display: none;
 }
-
 .menu {
   width: 100%;
   position: fixed;
   z-index: 1;
 }
-
 .menu > h4 {
   display: none;
 }
-
 a:visited {
   color: #707070;
 }
-
 a {
   width: 33.33%;
   padding: 1.5em;
@@ -129,22 +103,18 @@ a {
   align-content: center;
   text-decoration: none;
 }
-
 a > i {
   transform: scale(2.5, 2.5);
 }
-
 /***** Hero settings (Used by index & aboutme) *****/
 .hero-container {
   grid-area: hero;
   padding-top: 6em;
   display: flex;
 }
-
 .hero1 {
   display: none;
 }
-
 .hero1,
 .hero2 {
   width: 100%;
@@ -152,36 +122,29 @@ a > i {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
 }
-
 /***** Footer settings *****/
 footer {
   grid-area: footer;
   display: flex;
   justify-content: center;
 }
-
 footer > h5 {
   display: none;
 }
-
 .link-icons {
   display: none;
 }
-
 .tmu {
   border-radius: 40%;
-  margin-top: 2em;
-  margin-bottom: -2em;
+  margin: 2em 0 -2em 0;
   padding: 2em;
   width: 15%;
   overflow: hidden;
 }
-
 .tmu > i {
   margin-top: -1.25em;
 }
-
-/***** Settings for index.html (Some are reused by the other html files) *****/
+/***** Index.html settings (Some are reused by the other html files) *****/
 .index {
   grid-template-areas:
     "hero hero hero hero hero hero hero hero"
@@ -190,31 +153,25 @@ footer > h5 {
     ". . aside aside aside aside . ."
     "footer footer footer footer footer footer footer footer";
 }
-
 /***** Index main settings *****/
 .main-index {
   grid-area: main;
   margin-top: 5%;
 }
-
 .main-index > p,
 .main-index > h1 {
   text-align: center;
   margin-bottom: 10%;
 }
-
 /***** Index article settings *****/
 .article-index {
   grid-area: article;
 }
-
-.section {
+section {
   display: flex;
   align-items: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin: 2em 0;
 }
-
 .icon-container {
   display: flex;
   justify-content: center;
@@ -223,51 +180,42 @@ footer > h5 {
   padding: 2.5em;
   margin-right: 1em;
 }
-
 .icon-container > i {
   transform: scale(3, 3);
   align-self: center;
 }
-
-/* Index aside settings */
+/***** Index aside settings *****/
 .aside-index {
   grid-area: aside;
   display: flex;
   flex-direction: column;
   margin-top: 2em;
 }
-
 .aside-index > p {
   text-align: center;
-  font-weight: 400;
   font-size: 0.8em;
 }
-
 .aside-index > div {
   align-self: center;
   margin: 0;
 }
-
-/***** Settings for aboutme.html *****/
+/***** Aboutme.html settings *****/
 .aboutme {
   grid-template-areas:
     "hero hero hero hero hero hero hero hero"
     ". main main main main main main ."
     "footer footer footer footer footer footer footer footer";
 }
-
 /***** Aboutme main settings *****/
 .main-aboutme {
   grid-area: main;
 }
-
 .main-aboutme > h1 {
   text-align: center;
   text-decoration: underline;
   margin-bottom: 1em;
 }
-
-/***** Settings for contact.html *****/
+/***** Contact.html Settings *****/
 .contact {
   grid-template-areas:
     ". main main main main main main ."
@@ -275,83 +223,84 @@ footer > h5 {
     "map map map map map map map map"
     "footer footer footer footer footer footer footer footer";
 }
-
 /***** Contact main settings *****/
 .main-contact {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  margin-top: 4em;
+  margin-top: 6em;
 }
-
+.main-contact > hr {
+  margin: 4em 0 0 0;
+  width: 100%;
+}
 .main-contact > h2 {
   text-align: center;
   margin-bottom: 0;
 }
-
 button {
-  margin-top: 1em;
+  margin-top: 1.5em;
   border-radius: 4px;
+  font-size: 0.8em;
   padding: 1.2em;
   text-align: center;
   background-color: #a4c1d3;
 }
-
 button:hover {
   background: #8ca5b4;
 }
-
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-evenly;
+}
 #email,
 #fullname {
   border: 1px solid white;
   border-radius: 4px;
   height: 2em;
-  font-size: 4.5vw;
+  font-size: 1.1em;
   font-weight: 700;
   width: 85%;
-  padding: 2px;
+  padding: 4px;
 }
-
+#message {
+  resize: none;
+  font-size: 1.1em;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-weight: 700;
+  padding: 4px;
+  width: 85%;
+  height: 14em;
+  padding-left: none;
+}
+#fullname:hover,
+#email:hover,
+#message:hover {
+  border: 2px inset #6bbbbe;
+}
 .ic-contact {
   width: 0.5em;
   height: 0.2em;
   align-self: center;
   margin: 0;
-  margin-top: 1em;
 }
-
 .ic-contact > i {
   align-self: center;
 }
-
-#message {
-  resize: none;
-  height: 6em;
-  font-size: 4.5vw;
-  border: 1px solid white;
-  border-radius: 4px;
-  font-weight: 700;
-  padding: 2px;
-  padding-left: none;
-}
-
-#email:focus {
-  outline: none;
-}
-
 /***** Contact map settings *****/
 .map {
   grid-area: map;
-  margin-top: 2em;
+  margin: 2em 0 4em 0;
   display: flex;
   flex-direction: column;
 }
-
 .mapouter {
   width: 100%;
   margin-top: 1.5em;
 }
-
 iframe {
   width: 100%;
   margin-bottom: 0;
@@ -360,42 +309,61 @@ iframe {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
 }
-
-/* First @media for tablet resizing */
+/***** First @media for tablet resizing *****/
 @media (min-width: 768px) {
+  /***** General @768 settings *****/
   .hero1,
   .hero2 {
     width: 50%;
     height: 20em;
     display: block;
   }
-
   .icon-container {
     width: 10%;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin: 2em 0;
   }
-
   .icon-container > i {
     transform: scale(2.8, 3.2);
   }
-}
+  /***** Contact @768 settings *****/
+  #email,
+  #fullname {
+    height: 3em;
+    font-size: 1.4em;
+    width: 60%;
+  }
+  .main-contact > h2 {
+    font-size: 1.6em;
+  }
+  #message {
+    height: 13em;
+    font-size: 1.4em;
+    width: 60%;
+  }
+  button {
+    font-size: 1.2em;
+  }
 
-/* Second @media for desktop resizing */
+  label > h4 {
+    font-size: 1.4em;
+  }
+  iframe {
+    height: 25em;
+  }
+}
+/***** Second @media for desktop resizing *****/
 @media (min-width: 1024px) {
-  /***** Dropdown-menu @1024 settings *****/
+  /***** Header @1024 settings *****/
   .logo-container > img {
     max-width: 100%;
     max-height: 100%;
   }
-
   .logo-container {
-    display: inline-block;
+    display: flex;
     height: 100%;
     overflow: hidden;
     margin-left: 10%;
   }
-
   .dropdown > a {
     position: absolute;
     display: flex;
@@ -403,99 +371,84 @@ iframe {
     width: 2em;
     padding: 1em;
   }
-
   .dropdown > a > i {
     align-self: center;
     padding-left: 1em;
   }
-
   .dropdown {
     position: relative;
     display: flex;
     align-items: center;
     width: 10em;
     height: 3em;
-    margin-left: 45%;
+    margin-left: 40%;
   }
-
   .nav-icons > a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 0.5em;
+    border-radius: 2px;
   }
-
   .nav-icons > a > i {
     margin-top: 15%;
   }
-
   .nav-icons > a > i,
   .nav-icons > a > h4 {
     height: 2em;
     text-align: center;
   }
-
   .nav-icons {
     position: absolute;
     flex-direction: column;
-    margin-top: 100%;
-    margin-left: -50%;
+    margin: 100% 0 0 -50%;
     width: 400%;
     display: none;
   }
-
   .dropdown:hover .nav-icons {
     display: block;
   }
-
   .menu {
-    height: 3em;
+    height: 4em;
     display: flex;
     align-items: center;
   }
-
   .menu > h4 {
     display: inline-block;
-    align-self: center;
     white-space: nowrap;
+    margin-left: 1%;
+    font-size: 1.2em;
   }
-
   .nav-icons > a > h4 {
     display: inline-block;
   }
-
   /***** Footer @1024 settings *****/
   footer {
     width: 100%;
-    height: 2.5em;
+    height: 3em;
     background-color: white;
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 4em;
     overflow: hidden;
   }
-
   footer > h5 {
     display: inline;
   }
-
   .tmu {
     border-radius: 0;
     box-shadow: none;
-    margin: 0;
+    margin: 0 1.8em 0 6.5em;
     padding-top: 1em;
     padding-bottom: 1em;
     height: 100%;
     width: 10%;
-    margin-left: 6.5em;
-    margin-right: 1.8em;
   }
-
   .tmu > i {
     margin: 0;
     align-self: center;
   }
-
   /***** Index Settings @1024px *****/
   .index {
     grid-template-areas:
@@ -506,82 +459,69 @@ iframe {
       ". . article article article . . ."
       "footer footer footer footer footer footer footer footer";
   }
-
   .main-index > h1 {
     margin-bottom: 4%;
-    font-size: 2.8vw;
+    font-size: 2.4em;
   }
-
   .main-index > p {
-    font-size: 1.8vw;
+    font-size: 1.6em;
     text-align: center;
     margin-bottom: 10%;
   }
-
   .icon-container {
     width: 7em;
     height: 6em;
   }
-
   .icon-container > i {
     transform: scale(4, 4);
   }
-
   .aside-index {
     border-left: 1px solid rgba(255, 255, 255, 0.575);
-    margin-left: -20%;
-    margin-top: 2em;
+    margin: 2em 0 0 -20%;
   }
-
   aside > .icon-container {
-    width: 6em;
+    width: 5em;
     height: 5em;
     margin-left: 40%;
   }
-
   .aside-index > p {
     margin-left: 40%;
+    font-size: 1.2em;
   }
-
   .article-index {
     margin-top: 3em;
   }
-
   .article-index > hr {
     display: none;
   }
-
+  section > h4 {
+    font-size: 1.4em;
+  }
   .link-icons {
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: space-evenly;
   }
-
   .link-icons > a > i {
     align-self: center;
     transform: scale(1.5, 1.5);
   }
-
   /***** Aboutme settings @1024 *****/
   .abtme {
     height: 32em;
   }
-
   .main-aboutme {
-    margin-bottom: 5em;
-    margin-top: 2em;
+    margin: 2em 0 5em 0;
   }
-
-  .main-aboutme > section > h5 {
-    font-size: 1.6vw;
+  .main-aboutme > section > h6 {
+    font-size: 1.4em;
   }
-
   /***** Third @media for large desktop resizing *****/
   @media (min-width: 1440px) {
     /***** Dropdown menu @1440 settings *****/
     .dropdown {
-      margin-left: 55%;
+      margin-left: 50%;
     }
   }
 }
