@@ -384,7 +384,7 @@ iframe {
     align-items: center;
     width: 10em;
     height: 3em;
-    margin-left: 40%;
+    margin-left: 36.5%;
   }
   .nav-icons > a {
     display: flex;
@@ -442,7 +442,7 @@ iframe {
   .tmu {
     border-radius: 0;
     box-shadow: none;
-    margin: 0 1.8em 0 5.8em;
+    margin: 0 1.8em 0 5.7em;
     padding-top: 1em;
     padding-bottom: 1em;
     height: 100%;
