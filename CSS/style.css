@@ -442,7 +442,7 @@ iframe {
   .tmu {
     border-radius: 0;
     box-shadow: none;
-    margin: 0 1.8em 0 6.5em;
+    margin: 0 1.8em 0 5.8em;
     padding-top: 1em;
     padding-bottom: 1em;
     height: 100%;
@@ -450,7 +450,6 @@ iframe {
   }
   .tmu > i {
     margin: 0;
-    align-self: center;
   }
   /***** Index Settings @1024px *****/
   .index {
