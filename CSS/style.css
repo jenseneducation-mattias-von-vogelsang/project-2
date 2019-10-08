@@ -517,7 +517,7 @@ iframe {
     margin: 2em 0 5em 0;
   }
   .main-aboutme > section > h5 {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   /***** Third @media for large desktop resizing *****/
   @media (min-width: 1440px) {
