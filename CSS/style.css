@@ -475,7 +475,7 @@ iframe {
     height: 6em;
   }
   .icon-container > i {
-    transform: scale(4, 4);
+    transform: scale(3.5, 3.5);
   }
   .aside-index {
     border-left: 1px solid rgba(255, 255, 255, 0.575);
